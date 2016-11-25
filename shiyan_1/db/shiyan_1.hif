@@ -1,0 +1,42 @@
+Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Full Version
+10
+805
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+shiyan_1
+# storage
+db|shiyan_1.(0).cnf
+db|shiyan_1.(0).cnf
+# case_insensitive
+# source_file
+shiyan_1.bdf
+11509d99c82bde21acf32bbc64a8be90
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# complete
+

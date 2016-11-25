@@ -1,0 +1,62 @@
+|detection
+M[0] <= <VCC>
+M[1] <= <GND>
+M[2] <= <GND>
+M[3] <= <GND>
+sout[0] <= SCHK:inst1.sout[0]
+sout[1] <= SCHK:inst1.sout[1]
+sout[2] <= SCHK:inst1.sout[2]
+sout[3] <= SCHK:inst1.sout[3]
+sout[4] <= SCHK:inst1.sout[4]
+sout[5] <= SCHK:inst1.sout[5]
+sout[6] <= SCHK:inst1.sout[6]
+sout[7] <= SCHK:inst1.sout[7]
+din => SCHK:inst1.din
+keyin => key_dounce:inst.keyin
+clkasm => key_dounce:inst.clk_sam
+rst => SCHK:inst1.rst
+data[0] => SCHK:inst1.data[0]
+data[1] => SCHK:inst1.data[1]
+data[2] => SCHK:inst1.data[2]
+data[3] => SCHK:inst1.data[3]
+data[4] => SCHK:inst1.data[4]
+data[5] => SCHK:inst1.data[5]
+data[6] => SCHK:inst1.data[6]
+data[7] => SCHK:inst1.data[7]
+
+
+|detection|SCHK:inst1
+din => process_1~7.IN0
+din => process_1~6.IN0
+din => process_1~5.IN0
+din => process_1~4.IN0
+din => process_1~3.IN0
+din => process_1~2.IN0
+din => process_1~1.IN0
+din => process_1~0.IN0
+data[0] => process_1~0.IN1
+data[1] => process_1~1.IN1
+data[2] => process_1~2.IN1
+data[3] => process_1~3.IN1
+data[4] => process_1~4.IN1
+data[5] => process_1~5.IN1
+data[6] => process_1~6.IN1
+data[7] => process_1~7.IN1
+sout[1] <= sout~1.DB_MAX_OUTPUT_PORT_TYPE
+sout[2] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+sout[3] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+sout[4] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+sout[5] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+sout[6] <= sout~0.DB_MAX_OUTPUT_PORT_TYPE
+sout[7] <= process_1~8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|detection|key_dounce:inst
+key_h <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+clk_sam => inst.CLK
+clk_sam => inst1.CLK
+clk_sam => inst5.CLK
+keyin => inst.DATAIN
+key_l <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+
+

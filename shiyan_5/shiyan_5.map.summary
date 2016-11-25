@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Wed Nov 16 15:59:06 2016
+Quartus II Version : 9.0 Build 235 06/17/2009 SP 2 SJ Full Version
+Revision Name : shiyan_5
+Top-level Entity Name : detection
+Family : Cyclone III
+Total logic elements : 21
+    Total combinational functions : 18
+    Dedicated logic registers : 12
+Total registers : 12
+Total pins : 24
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

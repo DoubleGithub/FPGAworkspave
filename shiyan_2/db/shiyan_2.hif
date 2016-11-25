@@ -1,0 +1,122 @@
+Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Full Version
+10
+805
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+CNT4B
+# storage
+db|shiyan_2.(0).cnf
+db|shiyan_2.(0).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+CNT4B.vhd
+c5c242b1b651f4c0fae5cd6360f5fc3
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# lmf
+c:|altera|90|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+sikaoti1
+# storage
+db|shiyan_2.(3).cnf
+db|shiyan_2.(3).cnf
+# case_insensitive
+# source_file
+sikaoti1.bdf
+162848eaa86cfa5df25a9989543b26d1
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+shiyan_2
+# storage
+db|shiyan_2.(1).cnf
+db|shiyan_2.(1).cnf
+# case_insensitive
+# source_file
+shiyan_2.bdf
+b17dc07259607ae90e01418c8e4171a
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+sikaoti
+# storage
+db|shiyan_2.(2).cnf
+db|shiyan_2.(2).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+sikaoti.vhd
+bdc754738f74c14daf7c6e6861dd
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+sikaoti:inst
+}
+# lmf
+c:|altera|90|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# complete
+

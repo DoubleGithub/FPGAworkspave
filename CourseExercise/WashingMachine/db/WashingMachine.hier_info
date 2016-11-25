@@ -1,0 +1,15 @@
+|SetingTime
+load => time_set[3]~reg0.CLK
+load => time_set[2]~reg0.CLK
+load => time_set[1]~reg0.CLK
+load => time_set[0]~reg0.CLK
+time_input[0] => time_set[0]~reg0.DATAIN
+time_input[1] => time_set[1]~reg0.DATAIN
+time_input[2] => time_set[2]~reg0.DATAIN
+time_input[3] => time_set[3]~reg0.DATAIN
+time_set[0] <= time_set[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+time_set[1] <= time_set[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+time_set[2] <= time_set[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+time_set[3] <= time_set[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,16 @@
+Fitter Status : Successful - Thu Nov 24 01:05:34 2016
+Quartus II Version : 9.0 Build 235 06/17/2009 SP 2 SJ Full Version
+Revision Name : WashingMachine
+Top-level Entity Name : SetingTime
+Family : Cyclone III
+Device : EP3C25F324C8
+Timing Models : Final
+Total logic elements : 4 / 24,624 ( < 1 % )
+    Total combinational functions : 0 / 24,624 ( 0 % )
+    Dedicated logic registers : 4 / 24,624 ( < 1 % )
+Total registers : 4
+Total pins : 9 / 216 ( 4 % )
+Total virtual pins : 0
+Total memory bits : 0 / 608,256 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 132 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )

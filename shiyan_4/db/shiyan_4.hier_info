@@ -1,0 +1,64 @@
+|adder4
+a[0] => adder1:U0.a
+a[1] => adder1:U1.a
+a[2] => adder1:U2.a
+a[3] => adder1:U3.a
+b[0] => adder1:U0.b
+b[1] => adder1:U1.b
+b[2] => adder1:U2.b
+b[3] => adder1:U3.b
+co <= adder1:U3.co
+s[0] <= adder1:U0.s
+s[1] <= adder1:U1.s
+s[2] <= adder1:U2.s
+s[3] <= adder1:U3.s
+M[0] <= <VCC>
+M[1] <= <GND>
+M[2] <= <GND>
+M[3] <= <GND>
+
+
+|adder4|adder1:U0
+a => Mux1.IN8
+a => Mux0.IN8
+b => Mux1.IN9
+b => Mux0.IN9
+ci => Mux1.IN10
+ci => Mux0.IN10
+co <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+s <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder4|adder1:U1
+a => Mux1.IN8
+a => Mux0.IN8
+b => Mux1.IN9
+b => Mux0.IN9
+ci => Mux1.IN10
+ci => Mux0.IN10
+co <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+s <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder4|adder1:U2
+a => Mux1.IN8
+a => Mux0.IN8
+b => Mux1.IN9
+b => Mux0.IN9
+ci => Mux1.IN10
+ci => Mux0.IN10
+co <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+s <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder4|adder1:U3
+a => Mux1.IN8
+a => Mux0.IN8
+b => Mux1.IN9
+b => Mux0.IN9
+ci => Mux1.IN10
+ci => Mux0.IN10
+co <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+s <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,53 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'key_dounce:inst|inst'
+Slack : -1.587
+TNS   : -7.670
+
+Type  : Slow 1200mV 85C Model Setup 'clkasm'
+Slack : -0.138
+TNS   : -0.138
+
+Type  : Slow 1200mV 85C Model Hold 'clkasm'
+Slack : -0.051
+TNS   : -0.051
+
+Type  : Slow 1200mV 85C Model Hold 'key_dounce:inst|inst'
+Slack : 0.776
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'key_dounce:inst|inst'
+Slack : -1.491
+TNS   : -6.532
+
+Type  : Slow 1200mV 0C Model Setup 'clkasm'
+Slack : -0.042
+TNS   : -0.042
+
+Type  : Slow 1200mV 0C Model Hold 'clkasm'
+Slack : -0.041
+TNS   : -0.041
+
+Type  : Slow 1200mV 0C Model Hold 'key_dounce:inst|inst'
+Slack : 0.721
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'key_dounce:inst|inst'
+Slack : -0.083
+TNS   : -0.110
+
+Type  : Fast 1200mV 0C Model Setup 'clkasm'
+Slack : 0.119
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'clkasm'
+Slack : -0.051
+TNS   : -0.051
+
+Type  : Fast 1200mV 0C Model Hold 'key_dounce:inst|inst'
+Slack : 0.312
+TNS   : 0.000
+
+------------------------------------------------------------

@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="DIANZHEN">
+		<CBX_INST_ENTRY INSTANCE_NAME="|DIANZHENDRIVER|dot_buffer:inst|dot_ram:inst|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_01n1.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

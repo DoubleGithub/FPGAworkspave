@@ -1,0 +1,43 @@
+|BCD2SEG
+en => segout[6]~1.IN1
+bcdin[0] => Mux7.IN19
+bcdin[0] => Mux6.IN19
+bcdin[0] => Mux5.IN19
+bcdin[0] => Mux4.IN19
+bcdin[0] => Mux3.IN19
+bcdin[0] => Mux2.IN19
+bcdin[0] => Mux1.IN19
+bcdin[0] => Mux0.IN19
+bcdin[1] => Mux7.IN18
+bcdin[1] => Mux6.IN18
+bcdin[1] => Mux5.IN18
+bcdin[1] => Mux4.IN18
+bcdin[1] => Mux3.IN18
+bcdin[1] => Mux2.IN18
+bcdin[1] => Mux1.IN18
+bcdin[1] => Mux0.IN18
+bcdin[2] => Mux7.IN17
+bcdin[2] => Mux6.IN17
+bcdin[2] => Mux5.IN17
+bcdin[2] => Mux4.IN17
+bcdin[2] => Mux3.IN17
+bcdin[2] => Mux2.IN17
+bcdin[2] => Mux1.IN17
+bcdin[2] => Mux0.IN17
+bcdin[3] => Mux7.IN16
+bcdin[3] => Mux6.IN16
+bcdin[3] => Mux5.IN16
+bcdin[3] => Mux4.IN16
+bcdin[3] => Mux3.IN16
+bcdin[3] => Mux2.IN16
+bcdin[3] => Mux1.IN16
+bcdin[3] => Mux0.IN16
+segout[0] <= segout[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+segout[1] <= segout[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+segout[2] <= segout[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+segout[3] <= segout[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+segout[4] <= segout[4]$latch.DB_MAX_OUTPUT_PORT_TYPE
+segout[5] <= segout[5]$latch.DB_MAX_OUTPUT_PORT_TYPE
+segout[6] <= segout[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+

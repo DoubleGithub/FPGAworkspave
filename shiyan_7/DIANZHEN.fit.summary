@@ -1,0 +1,16 @@
+Fitter Status : Successful - Wed Nov 23 19:03:08 2016
+Quartus II Version : 9.0 Build 235 06/17/2009 SP 2 SJ Full Version
+Revision Name : DIANZHEN
+Top-level Entity Name : DIANZHENDRIVER
+Family : Cyclone III
+Device : EP3C25F324C8
+Timing Models : Final
+Total logic elements : 171 / 24,624 ( < 1 % )
+    Total combinational functions : 167 / 24,624 ( < 1 % )
+    Dedicated logic registers : 37 / 24,624 ( < 1 % )
+Total registers : 37
+Total pins : 26 / 216 ( 12 % )
+Total virtual pins : 0
+Total memory bits : 256 / 608,256 ( < 1 % )
+Embedded Multiplier 9-bit elements : 0 / 132 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )

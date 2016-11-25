@@ -1,0 +1,77 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'data_shida:inst1|Q[3]'
+Slack : -5.316
+TNS   : -6.489
+
+Type  : Slow 1200mV 85C Model Setup 'clk_20M'
+Slack : -3.050
+TNS   : -55.898
+
+Type  : Slow 1200mV 85C Model Setup 'clk_5K'
+Slack : -0.999
+TNS   : -1.938
+
+Type  : Slow 1200mV 85C Model Hold 'clk_20M'
+Slack : -2.376
+TNS   : -32.469
+
+Type  : Slow 1200mV 85C Model Hold 'clk_5K'
+Slack : 0.455
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'data_shida:inst1|Q[3]'
+Slack : 1.169
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'data_shida:inst1|Q[3]'
+Slack : -5.043
+TNS   : -6.162
+
+Type  : Slow 1200mV 0C Model Setup 'clk_20M'
+Slack : -2.627
+TNS   : -47.872
+
+Type  : Slow 1200mV 0C Model Setup 'clk_5K'
+Slack : -0.935
+TNS   : -1.470
+
+Type  : Slow 1200mV 0C Model Hold 'clk_20M'
+Slack : -2.170
+TNS   : -30.697
+
+Type  : Slow 1200mV 0C Model Hold 'clk_5K'
+Slack : 0.403
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'data_shida:inst1|Q[3]'
+Slack : 1.103
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'data_shida:inst1|Q[3]'
+Slack : -1.833
+TNS   : -1.888
+
+Type  : Fast 1200mV 0C Model Setup 'clk_20M'
+Slack : -0.742
+TNS   : -8.525
+
+Type  : Fast 1200mV 0C Model Setup 'clk_5K'
+Slack : 0.081
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'clk_20M'
+Slack : -1.155
+TNS   : -16.540
+
+Type  : Fast 1200mV 0C Model Hold 'clk_5K'
+Slack : 0.186
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'data_shida:inst1|Q[3]'
+Slack : 0.496
+TNS   : 0.000
+
+------------------------------------------------------------

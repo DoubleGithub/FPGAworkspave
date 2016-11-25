@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Wed Nov 02 18:49:42 2016
+Quartus II Version : 9.0 Build 235 06/17/2009 SP 2 SJ Full Version
+Revision Name : shiyan_4
+Top-level Entity Name : adder4
+Family : Cyclone III
+Total logic elements : 7
+    Total combinational functions : 7
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 17
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Wed Nov 16 19:21:16 2016
+Quartus II Version : 9.0 Build 235 06/17/2009 SP 2 SJ Full Version
+Revision Name : SEG7_dis
+Top-level Entity Name : SEG7_dis
+Family : Cyclone III
+Total logic elements : 34
+    Total combinational functions : 26
+    Dedicated logic registers : 17
+Total registers : 17
+Total pins : 25
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

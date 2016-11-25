@@ -1,0 +1,284 @@
+Simulator report for shiyan_5
+Wed Nov 16 16:01:54 2016
+Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 15.0 s       ;
+; Simulation Netlist Size     ; 82 nodes     ;
+; Simulation Coverage         ;      53.66 % ;
+; Total Number of Transitions ; 75439        ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone III  ;
+; Device                      ; EP3C25F324C8 ;
++-----------------------------+--------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                         ;
++--------------------------------------------------------------------------------------------+---------------+---------------+
+; Option                                                                                     ; Setting       ; Default Value ;
++--------------------------------------------------------------------------------------------+---------------+---------------+
+; Simulation mode                                                                            ; Timing        ; Timing        ;
+; Start time                                                                                 ; 0 ns          ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF          ;               ;
+; Vector input source                                                                        ; detection.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On            ; On            ;
+; Check outputs                                                                              ; Off           ; Off           ;
+; Report simulation coverage                                                                 ; On            ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On            ; On            ;
+; Display missing 1-value coverage report                                                    ; On            ; On            ;
+; Display missing 0-value coverage report                                                    ; On            ; On            ;
+; Detect setup and hold time violations                                                      ; Off           ; Off           ;
+; Detect glitches                                                                            ; Off           ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off           ; Off           ;
+; Generate Signal Activity File                                                              ; Off           ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off           ; Off           ;
+; Group bus channels in simulation results                                                   ; Off           ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On            ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE    ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off           ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off           ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto          ; Auto          ;
+; Interconnect Delay Model Type                                                              ; Transport     ; Transport     ;
+; Cell Delay Model Type                                                                      ; Transport     ; Transport     ;
++--------------------------------------------------------------------------------------------+---------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      53.66 % ;
+; Total nodes checked                                 ; 82           ;
+; Total output ports checked                          ; 82           ;
+; Total output ports with complete 1/0-value coverage ; 44           ;
+; Total output ports with no 1/0-value coverage       ; 38           ;
+; Total output ports with no 1-value coverage         ; 38           ;
+; Total output ports with no 0-value coverage         ; 38           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++--------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                            ;
++------------------------------------------+------------------------------------------+------------------+
+; Node Name                                ; Output Port Name                         ; Output Port Type ;
++------------------------------------------+------------------------------------------+------------------+
+; |detection|SCHK:inst1|current_state.s5   ; |detection|SCHK:inst1|current_state.s5   ; q                ;
+; |detection|SCHK:inst1|WideOr1            ; |detection|SCHK:inst1|WideOr1            ; combout          ;
+; |detection|SCHK:inst1|current_state.s3   ; |detection|SCHK:inst1|current_state.s3   ; q                ;
+; |detection|SCHK:inst1|current_state.s2   ; |detection|SCHK:inst1|current_state.s2   ; q                ;
+; |detection|SCHK:inst1|current_state.s1   ; |detection|SCHK:inst1|current_state.s1   ; q                ;
+; |detection|SCHK:inst1|current_state.s0   ; |detection|SCHK:inst1|current_state.s0   ; q                ;
+; |detection|SCHK:inst1|WideOr2            ; |detection|SCHK:inst1|WideOr2            ; combout          ;
+; |detection|SCHK:inst1|WideOr3~0          ; |detection|SCHK:inst1|WideOr3~0          ; combout          ;
+; |detection|SCHK:inst1|sout~4             ; |detection|SCHK:inst1|sout~4             ; combout          ;
+; |detection|SCHK:inst1|next_state.s6~1    ; |detection|SCHK:inst1|next_state.s6~1    ; combout          ;
+; |detection|SCHK:inst1|current_state.s4   ; |detection|SCHK:inst1|current_state.s4   ; q                ;
+; |detection|SCHK:inst1|next_state.s5~1    ; |detection|SCHK:inst1|next_state.s5~1    ; combout          ;
+; |detection|SCHK:inst1|Selector0~0        ; |detection|SCHK:inst1|Selector0~0        ; combout          ;
+; |detection|SCHK:inst1|Selector0~1        ; |detection|SCHK:inst1|Selector0~1        ; combout          ;
+; |detection|SCHK:inst1|Selector0~2        ; |detection|SCHK:inst1|Selector0~2        ; combout          ;
+; |detection|SCHK:inst1|Selector0~4        ; |detection|SCHK:inst1|Selector0~4        ; combout          ;
+; |detection|SCHK:inst1|Selector0~5        ; |detection|SCHK:inst1|Selector0~5        ; combout          ;
+; |detection|SCHK:inst1|Selector0~6        ; |detection|SCHK:inst1|Selector0~6        ; combout          ;
+; |detection|key_dounce:inst|inst          ; |detection|key_dounce:inst|inst          ; q                ;
+; |detection|key_dounce:inst|inst1         ; |detection|key_dounce:inst|inst1         ; q                ;
+; |detection|key_dounce:inst|inst5         ; |detection|key_dounce:inst|inst5         ; q                ;
+; |detection|key_dounce:inst|inst6         ; |detection|key_dounce:inst|inst6         ; combout          ;
+; |detection|sout[4]~output                ; |detection|sout[4]~output                ; o                ;
+; |detection|sout[4]                       ; |detection|sout[4]                       ; padout           ;
+; |detection|sout[3]~output                ; |detection|sout[3]~output                ; o                ;
+; |detection|sout[3]                       ; |detection|sout[3]                       ; padout           ;
+; |detection|sout[2]~output                ; |detection|sout[2]~output                ; o                ;
+; |detection|sout[2]                       ; |detection|sout[2]                       ; padout           ;
+; |detection|sout[1]~output                ; |detection|sout[1]~output                ; o                ;
+; |detection|sout[1]                       ; |detection|sout[1]                       ; padout           ;
+; |detection|sout[0]~output                ; |detection|sout[0]~output                ; o                ;
+; |detection|sout[0]                       ; |detection|sout[0]                       ; padout           ;
+; |detection|din~input                     ; |detection|din~input                     ; o                ;
+; |detection|din                           ; |detection|din                           ; padout           ;
+; |detection|rst~input                     ; |detection|rst~input                     ; o                ;
+; |detection|rst                           ; |detection|rst                           ; padout           ;
+; |detection|keyin~input                   ; |detection|keyin~input                   ; o                ;
+; |detection|keyin                         ; |detection|keyin                         ; padout           ;
+; |detection|clkasm~input                  ; |detection|clkasm~input                  ; o                ;
+; |detection|clkasm                        ; |detection|clkasm                        ; padout           ;
+; |detection|rst~inputclkctrl              ; |detection|rst~inputclkctrl              ; outclk           ;
+; |detection|key_dounce:inst|inst6~clkctrl ; |detection|key_dounce:inst|inst6~clkctrl ; outclk           ;
+; |detection|key_dounce:inst|inst1~feeder  ; |detection|key_dounce:inst|inst1~feeder  ; combout          ;
+; |detection|key_dounce:inst|inst~feeder   ; |detection|key_dounce:inst|inst~feeder   ; combout          ;
++------------------------------------------+------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++----------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                           ;
++----------------------------------------+----------------------------------------+------------------+
+; Node Name                              ; Output Port Name                       ; Output Port Type ;
++----------------------------------------+----------------------------------------+------------------+
+; |detection|SCHK:inst1|current_state.s8 ; |detection|SCHK:inst1|current_state.s8 ; q                ;
+; |detection|SCHK:inst1|current_state.s7 ; |detection|SCHK:inst1|current_state.s7 ; q                ;
+; |detection|SCHK:inst1|sout[6]~3        ; |detection|SCHK:inst1|sout[6]~3        ; combout          ;
+; |detection|SCHK:inst1|current_state.s6 ; |detection|SCHK:inst1|current_state.s6 ; q                ;
+; |detection|SCHK:inst1|WideOr1~0        ; |detection|SCHK:inst1|WideOr1~0        ; combout          ;
+; |detection|SCHK:inst1|next_state.s8~1  ; |detection|SCHK:inst1|next_state.s8~1  ; combout          ;
+; |detection|SCHK:inst1|next_state.s7~1  ; |detection|SCHK:inst1|next_state.s7~1  ; combout          ;
+; |detection|SCHK:inst1|Selector0~3      ; |detection|SCHK:inst1|Selector0~3      ; combout          ;
+; |detection|M[3]~output                 ; |detection|M[3]~output                 ; o                ;
+; |detection|M[3]                        ; |detection|M[3]                        ; padout           ;
+; |detection|M[2]~output                 ; |detection|M[2]~output                 ; o                ;
+; |detection|M[2]                        ; |detection|M[2]                        ; padout           ;
+; |detection|M[1]~output                 ; |detection|M[1]~output                 ; o                ;
+; |detection|M[1]                        ; |detection|M[1]                        ; padout           ;
+; |detection|M[0]~output                 ; |detection|M[0]~output                 ; o                ;
+; |detection|M[0]                        ; |detection|M[0]                        ; padout           ;
+; |detection|sout[7]~output              ; |detection|sout[7]~output              ; o                ;
+; |detection|sout[7]                     ; |detection|sout[7]                     ; padout           ;
+; |detection|sout[6]~output              ; |detection|sout[6]~output              ; o                ;
+; |detection|sout[6]                     ; |detection|sout[6]                     ; padout           ;
+; |detection|sout[5]~output              ; |detection|sout[5]~output              ; o                ;
+; |detection|sout[5]                     ; |detection|sout[5]                     ; padout           ;
+; |detection|data[7]~input               ; |detection|data[7]~input               ; o                ;
+; |detection|data[7]                     ; |detection|data[7]                     ; padout           ;
+; |detection|data[6]~input               ; |detection|data[6]~input               ; o                ;
+; |detection|data[6]                     ; |detection|data[6]                     ; padout           ;
+; |detection|data[5]~input               ; |detection|data[5]~input               ; o                ;
+; |detection|data[5]                     ; |detection|data[5]                     ; padout           ;
+; |detection|data[4]~input               ; |detection|data[4]~input               ; o                ;
+; |detection|data[4]                     ; |detection|data[4]                     ; padout           ;
+; |detection|data[2]~input               ; |detection|data[2]~input               ; o                ;
+; |detection|data[2]                     ; |detection|data[2]                     ; padout           ;
+; |detection|data[1]~input               ; |detection|data[1]~input               ; o                ;
+; |detection|data[1]                     ; |detection|data[1]                     ; padout           ;
+; |detection|data[0]~input               ; |detection|data[0]~input               ; o                ;
+; |detection|data[0]                     ; |detection|data[0]                     ; padout           ;
+; |detection|data[3]~input               ; |detection|data[3]~input               ; o                ;
+; |detection|data[3]                     ; |detection|data[3]                     ; padout           ;
++----------------------------------------+----------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++----------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                           ;
++----------------------------------------+----------------------------------------+------------------+
+; Node Name                              ; Output Port Name                       ; Output Port Type ;
++----------------------------------------+----------------------------------------+------------------+
+; |detection|SCHK:inst1|current_state.s8 ; |detection|SCHK:inst1|current_state.s8 ; q                ;
+; |detection|SCHK:inst1|current_state.s7 ; |detection|SCHK:inst1|current_state.s7 ; q                ;
+; |detection|SCHK:inst1|sout[6]~3        ; |detection|SCHK:inst1|sout[6]~3        ; combout          ;
+; |detection|SCHK:inst1|current_state.s6 ; |detection|SCHK:inst1|current_state.s6 ; q                ;
+; |detection|SCHK:inst1|WideOr1~0        ; |detection|SCHK:inst1|WideOr1~0        ; combout          ;
+; |detection|SCHK:inst1|next_state.s8~1  ; |detection|SCHK:inst1|next_state.s8~1  ; combout          ;
+; |detection|SCHK:inst1|next_state.s7~1  ; |detection|SCHK:inst1|next_state.s7~1  ; combout          ;
+; |detection|SCHK:inst1|Selector0~3      ; |detection|SCHK:inst1|Selector0~3      ; combout          ;
+; |detection|M[3]~output                 ; |detection|M[3]~output                 ; o                ;
+; |detection|M[3]                        ; |detection|M[3]                        ; padout           ;
+; |detection|M[2]~output                 ; |detection|M[2]~output                 ; o                ;
+; |detection|M[2]                        ; |detection|M[2]                        ; padout           ;
+; |detection|M[1]~output                 ; |detection|M[1]~output                 ; o                ;
+; |detection|M[1]                        ; |detection|M[1]                        ; padout           ;
+; |detection|M[0]~output                 ; |detection|M[0]~output                 ; o                ;
+; |detection|M[0]                        ; |detection|M[0]                        ; padout           ;
+; |detection|sout[7]~output              ; |detection|sout[7]~output              ; o                ;
+; |detection|sout[7]                     ; |detection|sout[7]                     ; padout           ;
+; |detection|sout[6]~output              ; |detection|sout[6]~output              ; o                ;
+; |detection|sout[6]                     ; |detection|sout[6]                     ; padout           ;
+; |detection|sout[5]~output              ; |detection|sout[5]~output              ; o                ;
+; |detection|sout[5]                     ; |detection|sout[5]                     ; padout           ;
+; |detection|data[7]~input               ; |detection|data[7]~input               ; o                ;
+; |detection|data[7]                     ; |detection|data[7]                     ; padout           ;
+; |detection|data[6]~input               ; |detection|data[6]~input               ; o                ;
+; |detection|data[6]                     ; |detection|data[6]                     ; padout           ;
+; |detection|data[5]~input               ; |detection|data[5]~input               ; o                ;
+; |detection|data[5]                     ; |detection|data[5]                     ; padout           ;
+; |detection|data[4]~input               ; |detection|data[4]~input               ; o                ;
+; |detection|data[4]                     ; |detection|data[4]                     ; padout           ;
+; |detection|data[2]~input               ; |detection|data[2]~input               ; o                ;
+; |detection|data[2]                     ; |detection|data[2]                     ; padout           ;
+; |detection|data[1]~input               ; |detection|data[1]~input               ; o                ;
+; |detection|data[1]                     ; |detection|data[1]                     ; padout           ;
+; |detection|data[0]~input               ; |detection|data[0]~input               ; o                ;
+; |detection|data[0]                     ; |detection|data[0]                     ; padout           ;
+; |detection|data[3]~input               ; |detection|data[3]~input               ; o                ;
+; |detection|data[3]                     ; |detection|data[3]                     ; padout           ;
++----------------------------------------+----------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Full Version
+    Info: Processing started: Wed Nov 16 16:01:51 2016
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off shiyan_5 -c shiyan_5
+Info: Using vector source file "D:/WorkSpace/FPGAworkspave/shiyan_5/detection.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      53.66 %
+Info: Number of transitions in simulation is 75439
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 161 megabytes
+    Info: Processing ended: Wed Nov 16 16:01:54 2016
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:03
+
+
