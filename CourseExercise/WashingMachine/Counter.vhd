@@ -11,8 +11,8 @@ entity Counter is
 		start: in std_logic ;
 		time_over: out std_logic ;
 		time_set: in std_logic_vector(3 downto 0);
-		roll_status_led: buffer std_logic_vector(1 downto 0); --表示四种状态：停止(00)，待机(01)，
-														   --正转(10)，反转(11)
+		roll_status_led: buffer std_logic_vector(1 downto 0);   --表示四种状态：停止(00)，待机(01)，
+														   		--正转(10)，反转(11)
 		
 		time_remain_dis: out std_logic_vector(3 downto 0);
 		time_current_dis_h: buffer std_logic_vector(3 downto 0);

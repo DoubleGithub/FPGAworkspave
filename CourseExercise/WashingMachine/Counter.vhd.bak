@@ -63,7 +63,7 @@ architecture behav of Counter is
 							if  time_count_second_5s = "0000" then 
 								if  time_count_second_60s = "00000000" then
 									if time_over_v = '1' then 
-										time_over_v := '1' ;           --
+										time_over_v := '1' ;           --终止
 									else 
 										time_set_v := time_set_v - 1 ; --倒计时次数减一
 										time_count_first_5s := "0101" ; --秒数重装     

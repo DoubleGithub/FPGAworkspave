@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for exercise
-Sat Nov 26 04:03:37 2016
+Sat Nov 26 14:15:39 2016
 Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Full Version
 
 
@@ -339,7 +339,7 @@ No dedicated SERDES Receiver circuitry present in device or used in design.
 Info: *******************************************************************
 Info: Running Quartus II TimeQuest Timing Analyzer
     Info: Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Full Version
-    Info: Processing started: Sat Nov 26 04:03:35 2016
+    Info: Processing started: Sat Nov 26 14:15:36 2016
 Info: Command: quartus_sta exercise -c exercise
 Info: qsta_default_script.tcl version: #1
 Warning: Ignored assignments for entity "exercise" -- entity does not exist in design
@@ -394,8 +394,8 @@ Info: Design is fully constrained for setup requirements
 Info: Design is fully constrained for hold requirements
 Info: Quartus II TimeQuest Timing Analyzer was successful. 0 errors, 7 warnings
     Info: Peak virtual memory: 234 megabytes
-    Info: Processing ended: Sat Nov 26 04:03:37 2016
-    Info: Elapsed time: 00:00:02
+    Info: Processing ended: Sat Nov 26 14:15:39 2016
+    Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:02
 
 

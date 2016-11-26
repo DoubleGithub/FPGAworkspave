@@ -1,5 +1,5 @@
 Flow report for WashingMachine
-Sat Nov 26 05:44:44 2016
+Sat Nov 26 17:32:22 2016
 Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Full Version
 
 
@@ -38,19 +38,19 @@ applicable agreement for further details.
 +------------------------------------------------------------------------------------+
 ; Flow Summary                                                                       ;
 +------------------------------------+-----------------------------------------------+
-; Flow Status                        ; Successful - Sat Nov 26 05:44:40 2016         ;
+; Flow Status                        ; Successful - Sat Nov 26 17:32:18 2016         ;
 ; Quartus II Version                 ; 9.0 Build 235 06/17/2009 SP 2 SJ Full Version ;
 ; Revision Name                      ; WashingMachine                                ;
-; Top-level Entity Name              ; Counter                                       ;
+; Top-level Entity Name              ; top                                           ;
 ; Family                             ; Cyclone III                                   ;
 ; Device                             ; EP3C25F324C8                                  ;
 ; Timing Models                      ; Final                                         ;
 ; Met timing requirements            ; N/A                                           ;
-; Total logic elements               ; 433 / 24,624 ( 2 % )                          ;
-;     Total combinational functions  ; 433 / 24,624 ( 2 % )                          ;
-;     Dedicated logic registers      ; 43 / 24,624 ( < 1 % )                         ;
-; Total registers                    ; 43                                            ;
-; Total pins                         ; 22 / 216 ( 10 % )                             ;
+; Total logic elements               ; 461 / 24,624 ( 2 % )                          ;
+;     Total combinational functions  ; 457 / 24,624 ( 2 % )                          ;
+;     Dedicated logic registers      ; 61 / 24,624 ( < 1 % )                         ;
+; Total registers                    ; 61                                            ;
+; Total pins                         ; 43 / 216 ( 20 % )                             ;
 ; Total virtual pins                 ; 0                                             ;
 ; Total memory bits                  ; 0 / 608,256 ( 0 % )                           ;
 ; Embedded Multiplier 9-bit elements ; 0 / 132 ( 0 % )                               ;
@@ -63,7 +63,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/26/2016 05:44:24 ;
+; Start date & time ; 11/26/2016 17:32:01 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; WashingMachine      ;
 +-------------------+---------------------+
@@ -74,13 +74,13 @@ applicable agreement for further details.
 +------------------------------------+-------------------------------+----------------+-------------+----------------+
 ; Assignment Name                    ; Value                         ; Default Value  ; Entity Name ; Section Id     ;
 +------------------------------------+-------------------------------+----------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID              ; 1096874744053.148011026404284 ; --             ; --          ; --             ;
+; COMPILER_SIGNATURE_ID              ; 1096874744053.148015272105768 ; --             ; --          ; --             ;
 ; MAX_CORE_JUNCTION_TEMP             ; 85                            ; --             ; --          ; --             ;
 ; MIN_CORE_JUNCTION_TEMP             ; 0                             ; --             ; --          ; --             ;
 ; NOMINAL_CORE_SUPPLY_VOLTAGE        ; 1.2V                          ; --             ; --          ; --             ;
-; PARTITION_COLOR                    ; 16764057                      ; --             ; Counter     ; Top            ;
-; PARTITION_NETLIST_TYPE             ; SOURCE                        ; --             ; Counter     ; Top            ;
-; TOP_LEVEL_ENTITY                   ; Counter                       ; WashingMachine ; --          ; --             ;
+; PARTITION_COLOR                    ; 16764057                      ; --             ; top         ; Top            ;
+; PARTITION_NETLIST_TYPE             ; SOURCE                        ; --             ; top         ; Top            ;
+; TOP_LEVEL_ENTITY                   ; top                           ; WashingMachine ; --          ; --             ;
 ; USE_GENERATED_PHYSICAL_CONSTRAINTS ; Off                           ; --             ; --          ; eda_blast_fpga ;
 +------------------------------------+-------------------------------+----------------+-------------+----------------+
 
@@ -90,11 +90,11 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:03     ; 1.0                     ; 217 MB              ; 00:00:03                           ;
-; Fitter                    ; 00:00:08     ; 1.2                     ; 298 MB              ; 00:00:09                           ;
-; Assembler                 ; 00:00:02     ; 1.0                     ; 212 MB              ; 00:00:02                           ;
-; TimeQuest Timing Analyzer ; 00:00:03     ; 1.0                     ; 238 MB              ; 00:00:03                           ;
-; Total                     ; 00:00:16     ; --                      ; --                  ; 00:00:17                           ;
+; Analysis & Synthesis      ; 00:00:03     ; 1.0                     ; 220 MB              ; 00:00:03                           ;
+; Fitter                    ; 00:00:09     ; 1.0                     ; 301 MB              ; 00:00:09                           ;
+; Assembler                 ; 00:00:03     ; 1.0                     ; 215 MB              ; 00:00:02                           ;
+; TimeQuest Timing Analyzer ; 00:00:04     ; 1.0                     ; 241 MB              ; 00:00:03                           ;
+; Total                     ; 00:00:19     ; --                      ; --                  ; 00:00:17                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

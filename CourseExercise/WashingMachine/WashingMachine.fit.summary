@@ -1,15 +1,15 @@
-Fitter Status : Successful - Sat Nov 26 05:44:36 2016
+Fitter Status : Successful - Sat Nov 26 17:32:14 2016
 Quartus II Version : 9.0 Build 235 06/17/2009 SP 2 SJ Full Version
 Revision Name : WashingMachine
-Top-level Entity Name : Counter
+Top-level Entity Name : top
 Family : Cyclone III
 Device : EP3C25F324C8
 Timing Models : Final
-Total logic elements : 433 / 24,624 ( 2 % )
-    Total combinational functions : 433 / 24,624 ( 2 % )
-    Dedicated logic registers : 43 / 24,624 ( < 1 % )
-Total registers : 43
-Total pins : 22 / 216 ( 10 % )
+Total logic elements : 461 / 24,624 ( 2 % )
+    Total combinational functions : 457 / 24,624 ( 2 % )
+    Dedicated logic registers : 61 / 24,624 ( < 1 % )
+Total registers : 61
+Total pins : 43 / 216 ( 20 % )
 Total virtual pins : 0
 Total memory bits : 0 / 608,256 ( 0 % )
 Embedded Multiplier 9-bit elements : 0 / 132 ( 0 % )

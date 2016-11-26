@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "Cyclone III"
 set_global_assignment -name DEVICE EP3C25F324C8
-set_global_assignment -name TOP_LEVEL_ENTITY Counter
+set_global_assignment -name TOP_LEVEL_ENTITY top
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION "9.0 SP2"
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "21:17:06  NOVEMBER 23, 2016"
 set_global_assignment -name LAST_QUARTUS_VERSION "9.0 SP2"
@@ -48,17 +48,22 @@ set_global_assignment -name DEVICE_FILTER_SPEED_GRADE 8
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name NOMINAL_CORE_SUPPLY_VOLTAGE 1.2V
-set_global_assignment -name VHDL_FILE SetingTime.vhd
 set_global_assignment -name TIMEQUEST_MULTICORNER_ANALYSIS ON
 set_global_assignment -name TIMEQUEST_DO_CCPP_REMOVAL ON
 set_global_assignment -name LL_ROOT_REGION ON -entity WashingMachine -section_id "Root Region"
 set_global_assignment -name LL_MEMBER_STATE LOCKED -entity WashingMachine -section_id "Root Region"
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE top.vwf
+set_global_assignment -name VHDL_FILE SCAN_LED.vhd
+set_global_assignment -name VECTOR_WAVEFORM_FILE top.vwf
+set_global_assignment -name VHDL_FILE LedCoding.vhd
+set_global_assignment -name BDF_FILE key_dounce.bdf
+set_global_assignment -name BDF_FILE Beep.bdf
+set_global_assignment -name VHDL_FILE SetingTime.vhd
 set_global_assignment -name VHDL_FILE Counter.vhd
+set_global_assignment -name BDF_FILE top.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Counter.vwf
+set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
-set_global_assignment -name LL_ROOT_REGION ON -entity SetingTime -section_id "Root Region"
-set_global_assignment -name LL_MEMBER_STATE LOCKED -entity SetingTime -section_id "Root Region"
-set_global_assignment -name BDF_FILE top.bdf
-set_global_assignment -name VECTOR_WAVEFORM_FILE Counter.vwf
-set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE Counter.vwf

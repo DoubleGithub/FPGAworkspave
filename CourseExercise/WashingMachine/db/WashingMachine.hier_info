@@ -1,4 +1,57 @@
-|Counter
+|top
+beep_out <= Beep:inst2.beep_out
+beep_clk => Beep:inst2.CLK
+count_clk => Counter:inst1.clk
+count_clk => inst13.IN0
+en => Counter:inst1.en
+start => Counter:inst1.start
+load => SetingTime:inst.load
+time_input[0] => SetingTime:inst.time_input[0]
+time_input[1] => SetingTime:inst.time_input[1]
+time_input[2] => SetingTime:inst.time_input[2]
+time_input[3] => SetingTime:inst.time_input[3]
+BT[0] <= SCAN_LED:inst14.BT[0]
+BT[1] <= SCAN_LED:inst14.BT[1]
+BT[2] <= SCAN_LED:inst14.BT[2]
+BT[3] <= SCAN_LED:inst14.BT[3]
+BT[4] <= SCAN_LED:inst14.BT[4]
+BT[5] <= SCAN_LED:inst14.BT[5]
+BT[6] <= SCAN_LED:inst14.BT[6]
+BT[7] <= SCAN_LED:inst14.BT[7]
+scan_clk => SCAN_LED:inst14.CLK
+dis_h[0] <= DIN[4].DB_MAX_OUTPUT_PORT_TYPE
+dis_h[1] <= DIN[5].DB_MAX_OUTPUT_PORT_TYPE
+dis_h[2] <= DIN[6].DB_MAX_OUTPUT_PORT_TYPE
+dis_h[3] <= DIN[7].DB_MAX_OUTPUT_PORT_TYPE
+dis_l[0] <= DIN[0].DB_MAX_OUTPUT_PORT_TYPE
+dis_l[1] <= DIN[1].DB_MAX_OUTPUT_PORT_TYPE
+dis_l[2] <= DIN[2].DB_MAX_OUTPUT_PORT_TYPE
+dis_l[3] <= DIN[3].DB_MAX_OUTPUT_PORT_TYPE
+Led_dis[0] <= LedCoding:inst4.Led_dis[0]
+Led_dis[1] <= LedCoding:inst4.Led_dis[1]
+Led_dis[2] <= LedCoding:inst4.Led_dis[2]
+Led_dis[3] <= LedCoding:inst4.Led_dis[3]
+SEG[0] <= SCAN_LED:inst14.SG[0]
+SEG[1] <= SCAN_LED:inst14.SG[1]
+SEG[2] <= SCAN_LED:inst14.SG[2]
+SEG[3] <= SCAN_LED:inst14.SG[3]
+SEG[4] <= SCAN_LED:inst14.SG[4]
+SEG[5] <= SCAN_LED:inst14.SG[5]
+SEG[6] <= SCAN_LED:inst14.SG[6]
+SEG[7] <= SCAN_LED:inst14.SG[7]
+time_remin[0] <= DIN[8].DB_MAX_OUTPUT_PORT_TYPE
+time_remin[1] <= DIN[9].DB_MAX_OUTPUT_PORT_TYPE
+time_remin[2] <= DIN[10].DB_MAX_OUTPUT_PORT_TYPE
+time_remin[3] <= DIN[11].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top|Beep:inst2
+beep_out <= inst.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst.IN0
+time_over => inst.IN1
+
+
+|top|Counter:inst1
 clk => roll_status_led_v[1].CLK
 clk => roll_status_led_v[0].CLK
 clk => time_current_dis_h_v[3].CLK
@@ -190,5 +243,109 @@ time_current_dis_l[0] <= time_current_dis_l_v[0].DB_MAX_OUTPUT_PORT_TYPE
 time_current_dis_l[1] <= time_current_dis_l_v[1].DB_MAX_OUTPUT_PORT_TYPE
 time_current_dis_l[2] <= time_current_dis_l_v[2].DB_MAX_OUTPUT_PORT_TYPE
 time_current_dis_l[3] <= time_current_dis_l_v[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top|SetingTime:inst
+load => time_set[3]~reg0.CLK
+load => time_set[2]~reg0.CLK
+load => time_set[1]~reg0.CLK
+load => time_set[0]~reg0.CLK
+time_input[0] => time_set[0]~reg0.DATAIN
+time_input[1] => time_set[1]~reg0.DATAIN
+time_input[2] => time_set[2]~reg0.DATAIN
+time_input[3] => time_set[3]~reg0.DATAIN
+time_set[0] <= time_set[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+time_set[1] <= time_set[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+time_set[2] <= time_set[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+time_set[3] <= time_set[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top|SCAN_LED:inst14
+DIN[0] => DOUT[0].DATAIN
+DIN[1] => DOUT[1].DATAIN
+DIN[2] => DOUT[2].DATAIN
+DIN[3] => DOUT[3].DATAIN
+DIN[4] => DOUT[4].DATAIN
+DIN[5] => DOUT[5].DATAIN
+DIN[6] => DOUT[6].DATAIN
+DIN[7] => DOUT[7].DATAIN
+DIN[8] => DOUT[8].DATAIN
+DIN[9] => DOUT[9].DATAIN
+DIN[10] => DOUT[10].DATAIN
+DIN[11] => DOUT[11].DATAIN
+DIN[12] => ~NO_FANOUT~
+DIN[13] => ~NO_FANOUT~
+DIN[14] => ~NO_FANOUT~
+DIN[15] => ~NO_FANOUT~
+DIN[16] => ~NO_FANOUT~
+DIN[17] => ~NO_FANOUT~
+DIN[18] => ~NO_FANOUT~
+DIN[19] => ~NO_FANOUT~
+DIN[20] => ~NO_FANOUT~
+DIN[21] => ~NO_FANOUT~
+DIN[22] => ~NO_FANOUT~
+DIN[23] => ~NO_FANOUT~
+DIN[24] => ~NO_FANOUT~
+DIN[25] => ~NO_FANOUT~
+DIN[26] => ~NO_FANOUT~
+DIN[27] => ~NO_FANOUT~
+DIN[28] => ~NO_FANOUT~
+DIN[29] => ~NO_FANOUT~
+DIN[30] => ~NO_FANOUT~
+DIN[31] => ~NO_FANOUT~
+DP[0] => Mux6.IN3
+DP[1] => Mux6.IN2
+DP[2] => Mux6.IN0
+DP[2] => Mux6.IN1
+DP[3] => ~NO_FANOUT~
+DP[4] => ~NO_FANOUT~
+DP[5] => ~NO_FANOUT~
+DP[6] => ~NO_FANOUT~
+DP[7] => ~NO_FANOUT~
+CLK => CNT8[1].CLK
+CLK => CNT8[0].CLK
+LK => DOUT[11].CLK
+LK => DOUT[10].CLK
+LK => DOUT[9].CLK
+LK => DOUT[8].CLK
+LK => DOUT[7].CLK
+LK => DOUT[6].CLK
+LK => DOUT[5].CLK
+LK => DOUT[4].CLK
+LK => DOUT[3].CLK
+LK => DOUT[2].CLK
+LK => DOUT[1].CLK
+LK => DOUT[0].CLK
+SG[0] <= Mux13.DB_MAX_OUTPUT_PORT_TYPE
+SG[1] <= Mux12.DB_MAX_OUTPUT_PORT_TYPE
+SG[2] <= Mux11.DB_MAX_OUTPUT_PORT_TYPE
+SG[3] <= Mux10.DB_MAX_OUTPUT_PORT_TYPE
+SG[4] <= Mux9.DB_MAX_OUTPUT_PORT_TYPE
+SG[5] <= Mux8.DB_MAX_OUTPUT_PORT_TYPE
+SG[6] <= Mux7.DB_MAX_OUTPUT_PORT_TYPE
+SG[7] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+BT[0] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+BT[1] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+BT[2] <= CNT8[1].DB_MAX_OUTPUT_PORT_TYPE
+BT[3] <= <VCC>
+BT[4] <= <VCC>
+BT[5] <= <VCC>
+BT[6] <= <VCC>
+BT[7] <= <VCC>
+
+
+|top|LedCoding:inst4
+roll_status_led[0] => Mux3.IN5
+roll_status_led[0] => Mux2.IN5
+roll_status_led[0] => Mux1.IN5
+roll_status_led[0] => Mux0.IN5
+roll_status_led[1] => Mux3.IN4
+roll_status_led[1] => Mux2.IN4
+roll_status_led[1] => Mux1.IN4
+roll_status_led[1] => Mux0.IN4
+Led_dis[0] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+Led_dis[1] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+Led_dis[2] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+Led_dis[3] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 

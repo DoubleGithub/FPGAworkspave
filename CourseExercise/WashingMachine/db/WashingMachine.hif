@@ -933,7 +933,7 @@ ON
 # case_insensitive
 # source_file
 Counter.vhd
-3136ef8c607f74a65bcf3eecd96dee49
+16a7a767ecf5973a110b665b4cf5b1
 5
 # internal_option {
 HDL_INITIAL_FANOUT_LIMIT
@@ -946,11 +946,167 @@ AUTO_ROM_RECOGNITION
 ON
 }
 # hierarchies {
-|
+Counter:inst1
 }
 # lmf
 d:|altera|90|quartus|lmf|maxplus2.lmf
 9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+key_dounce
+# storage
+db|WashingMachine.(11).cnf
+db|WashingMachine.(11).cnf
+# case_insensitive
+# source_file
+key_dounce.bdf
+fb5cef7b54eb82fbb823eb6716846
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+Beep
+# storage
+db|WashingMachine.(13).cnf
+db|WashingMachine.(13).cnf
+# case_insensitive
+# source_file
+Beep.bdf
+133b1790b43274a1533a1f3ed7bd62
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Beep:inst2
+}
+# macro_sequence
+
+# end
+# entity
+LedCoding
+# storage
+db|WashingMachine.(14).cnf
+db|WashingMachine.(14).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+LedCoding.vhd
+2f10b71742fd860945a6f5150b191ff
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+LedCoding:inst4
+}
+# lmf
+d:|altera|90|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+SetingTime
+# storage
+db|WashingMachine.(15).cnf
+db|WashingMachine.(15).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+SetingTime.vhd
+a5247d87fed77931e77ac5b68703447
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+SetingTime:inst
+}
+# lmf
+d:|altera|90|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+SCAN_LED
+# storage
+db|WashingMachine.(12).cnf
+db|WashingMachine.(12).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+SCAN_LED.vhd
+a32b9da326e53e42a0902d9d4df77980
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+SCAN_LED:inst14
+}
+# lmf
+d:|altera|90|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+top
+# storage
+db|WashingMachine.(16).cnf
+db|WashingMachine.(16).cnf
+# case_insensitive
+# source_file
+top.bdf
+bf62fc75a69a919c8da7991d2c5f83e
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
 # macro_sequence
 
 # end
