@@ -1,5 +1,5 @@
 Assembler report for WashingMachine
-Thu Nov 24 01:05:39 2016
+Sat Nov 26 05:44:40 2016
 Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Full Version
 
 
@@ -10,7 +10,7 @@ Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Full Version
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
-  5. Assembler Device Options: E:/Workspace/FPGA/workspace/CourseExercise/WashingMachine/WashingMachine.sof
+  5. Assembler Device Options: E:/Workspace/FPGAworkspave/CourseExercise/WashingMachine/WashingMachine.sof
   6. Assembler Messages
 
 
@@ -37,9 +37,9 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Thu Nov 24 01:05:39 2016 ;
+; Assembler Status      ; Successful - Sat Nov 26 05:44:40 2016 ;
 ; Revision Name         ; WashingMachine                        ;
-; Top-level Entity Name ; SetingTime                            ;
+; Top-level Entity Name ; Counter                               ;
 ; Family                ; Cyclone III                           ;
 ; Device                ; EP3C25F324C8                          ;
 +-----------------------+---------------------------------------+
@@ -75,24 +75,24 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------+----------+---------------+
 
 
-+------------------------------------------------------------------------------+
-; Assembler Generated Files                                                    ;
-+------------------------------------------------------------------------------+
-; File Name                                                                    ;
-+------------------------------------------------------------------------------+
-; E:/Workspace/FPGA/workspace/CourseExercise/WashingMachine/WashingMachine.sof ;
-+------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+; Assembler Generated Files                                                   ;
++-----------------------------------------------------------------------------+
+; File Name                                                                   ;
++-----------------------------------------------------------------------------+
+; E:/Workspace/FPGAworkspave/CourseExercise/WashingMachine/WashingMachine.sof ;
++-----------------------------------------------------------------------------+
 
 
-+--------------------------------------------------------------------------------------------------------+
-; Assembler Device Options: E:/Workspace/FPGA/workspace/CourseExercise/WashingMachine/WashingMachine.sof ;
-+----------------+---------------------------------------------------------------------------------------+
-; Option         ; Setting                                                                               ;
-+----------------+---------------------------------------------------------------------------------------+
-; Device         ; EP3C25F324C8                                                                          ;
-; JTAG usercode  ; 0xFFFFFFFF                                                                            ;
-; Checksum       ; 0x0012D597                                                                            ;
-+----------------+---------------------------------------------------------------------------------------+
++-------------------------------------------------------------------------------------------------------+
+; Assembler Device Options: E:/Workspace/FPGAworkspave/CourseExercise/WashingMachine/WashingMachine.sof ;
++----------------+--------------------------------------------------------------------------------------+
+; Option         ; Setting                                                                              ;
++----------------+--------------------------------------------------------------------------------------+
+; Device         ; EP3C25F324C8                                                                         ;
+; JTAG usercode  ; 0xFFFFFFFF                                                                           ;
+; Checksum       ; 0x0015DB06                                                                           ;
++----------------+--------------------------------------------------------------------------------------+
 
 
 +--------------------+
@@ -101,14 +101,14 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II Assembler
     Info: Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Full Version
-    Info: Processing started: Thu Nov 24 01:05:36 2016
+    Info: Processing started: Sat Nov 26 05:44:38 2016
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off WashingMachine -c WashingMachine
 Info: Writing out detailed assembly data for power analysis
 Info: Assembler is generating device programming files
 Info: Quartus II Assembler was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 211 megabytes
-    Info: Processing ended: Thu Nov 24 01:05:39 2016
-    Info: Elapsed time: 00:00:03
+    Info: Peak virtual memory: 212 megabytes
+    Info: Processing ended: Sat Nov 26 05:44:40 2016
+    Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:02
 
 

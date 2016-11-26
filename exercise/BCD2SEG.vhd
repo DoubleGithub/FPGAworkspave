@@ -5,31 +5,32 @@ use ieee.std_logic_arith.all;
 use ieee.std_logic_unsigned.all;
 
 entity BCD2SEG is
-	port(	en : in std_logic;
-			bcdin: in std_logic_vector(3 downto 0);
-			segout:out std_logic_vector(6 downto 0)
+	port(	--clk : in std_logic;
+			s: in std_logic_vector(7 downto 0);
+			y1:buffer  std_logic_vector(3 downto 0);
+			y2:buffer  std_logic_vector(3 downto 0)
+			--y3:out std_logic_vector(7 downto 0)
 	);
 
 end BCD2SEG ;
 
-architecture behav of BCD2SEG is 
+architecture behav of BCD2SEG is
 begin 
-process (en,bcdin)
+process (s)	
+	variable tmp : integer ; 
+	variable s1:std_logic_vector(7 downto 0):= "00101110" ;
+	variable y11:std_logic_vector(3 downto 0);
+	variable y21:std_logic_vector(3 downto 0);
 begin 
-	if en = '1'	then
-		case bcdin is
-			when "0000" => segout <= "1111110";
-			when "0001" => segout <= "0110000";
-			when "0010" => segout <= "1101101";
-			when "0011" => segout <= "1111001";
-			when "0100" => segout <= "0110011";
-			when "0101" => segout <= "1011011";
-			when "0110" => segout <= "1011111";
-			when "0111" => segout <= "1110000";
-			when "1000" => segout <= "1111111";
-			when "1001" => segout <= "1111011";
-			when others => null;
-		end case;
-	end if;
+		tmp := conv_integer(s1);
+		--q1 := tmp/10 ;
+		--q2 := q1/10  ;
+			y11 := conv_std_logic_vector(tmp rem 10 , 4);
+			y21 := conv_std_logic_vector((tmp/10) rem 10 , 4);
+			y1 <= y11 ;
+			y2 <= y21;
+			--y3 <= y2 & y1 ;
+			--y3 <= conv_std_logic_vector(q2 rem 10 , 4);
 end process;
+
 end behav;

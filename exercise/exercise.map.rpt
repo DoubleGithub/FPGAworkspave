@@ -1,5 +1,5 @@
 Analysis & Synthesis report for exercise
-Tue Nov 15 20:26:06 2016
+Sat Nov 26 04:03:23 2016
 Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Full Version
 
 
@@ -12,9 +12,8 @@ Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Full Version
   4. Analysis & Synthesis Source Files Read
   5. Analysis & Synthesis Resource Usage Summary
   6. Analysis & Synthesis Resource Utilization by Entity
-  7. User-Specified and Inferred Latches
-  8. General Register Statistics
-  9. Analysis & Synthesis Messages
+  7. General Register Statistics
+  8. Analysis & Synthesis Messages
 
 
 
@@ -40,16 +39,16 @@ applicable agreement for further details.
 +------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                       ;
 +------------------------------------+-----------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Nov 15 20:26:06 2016         ;
+; Analysis & Synthesis Status        ; Successful - Sat Nov 26 04:03:23 2016         ;
 ; Quartus II Version                 ; 9.0 Build 235 06/17/2009 SP 2 SJ Full Version ;
 ; Revision Name                      ; exercise                                      ;
 ; Top-level Entity Name              ; BCD2SEG                                       ;
 ; Family                             ; Cyclone III                                   ;
-; Total logic elements               ; 15                                            ;
-;     Total combinational functions  ; 15                                            ;
+; Total logic elements               ; 0                                             ;
+;     Total combinational functions  ; 0                                             ;
 ;     Dedicated logic registers      ; 0                                             ;
 ; Total registers                    ; 0                                             ;
-; Total pins                         ; 12                                            ;
+; Total pins                         ; 16                                            ;
 ; Total virtual pins                 ; 0                                             ;
 ; Total memory bits                  ; 0                                             ;
 ; Embedded Multiplier 9-bit elements ; 0                                             ;
@@ -139,37 +138,36 @@ applicable agreement for further details.
 +----------------------------------+-----------------+-----------------+-------------------------------------------------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                    ;
 +----------------------------------+-----------------+-----------------+-------------------------------------------------+
-; BCD2SEG.vhd                      ; yes             ; User VHDL File  ; D:/WorkSpace/FPGAworkspave/exercise/BCD2SEG.vhd ;
+; BCD2SEG.vhd                      ; yes             ; User VHDL File  ; E:/Workspace/FPGAworkspave/exercise/BCD2SEG.vhd ;
 +----------------------------------+-----------------+-----------------+-------------------------------------------------+
 
 
-+--------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                  ;
-+---------------------------------------------+----------------+
-; Resource                                    ; Usage          ;
-+---------------------------------------------+----------------+
-; Estimated Total logic elements              ; 15             ;
-;                                             ;                ;
-; Total combinational functions               ; 15             ;
-; Logic element usage by number of LUT inputs ;                ;
-;     -- 4 input functions                    ; 5              ;
-;     -- 3 input functions                    ; 10             ;
-;     -- <=2 input functions                  ; 0              ;
-;                                             ;                ;
-; Logic elements by mode                      ;                ;
-;     -- normal mode                          ; 15             ;
-;     -- arithmetic mode                      ; 0              ;
-;                                             ;                ;
-; Total registers                             ; 0              ;
-;     -- Dedicated logic registers            ; 0              ;
-;     -- I/O registers                        ; 0              ;
-;                                             ;                ;
-; I/O pins                                    ; 12             ;
-; Maximum fan-out node                        ; bcdin[1]~input ;
-; Maximum fan-out                             ; 8              ;
-; Total fan-out                               ; 69             ;
-; Average fan-out                             ; 1.77           ;
-+---------------------------------------------+----------------+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+;                                             ;       ;
+; Total combinational functions               ; 0     ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 0     ;
+;     -- 3 input functions                    ; 0     ;
+;     -- <=2 input functions                  ; 0     ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 0     ;
+;     -- arithmetic mode                      ; 0     ;
+;                                             ;       ;
+; Total registers                             ; 0     ;
+;     -- Dedicated logic registers            ; 0     ;
+;     -- I/O registers                        ; 0     ;
+;                                             ;       ;
+; I/O pins                                    ; 16    ;
+; Maximum fan-out node                        ; s[0]  ;
+; Maximum fan-out                             ; 1     ;
+; Total fan-out                               ; 16    ;
+; Average fan-out                             ; 0.50  ;
++---------------------------------------------+-------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -177,26 +175,9 @@ applicable agreement for further details.
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; |BCD2SEG                   ; 15 (15)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 12   ; 0            ; |BCD2SEG            ; work         ;
+; |BCD2SEG                   ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 16   ; 0            ; |BCD2SEG            ; work         ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+---------------------------------------------------------------------------------------------------+
-; User-Specified and Inferred Latches                                                               ;
-+----------------------------------------------------+---------------------+------------------------+
-; Latch Name                                         ; Latch Enable Signal ; Free of Timing Hazards ;
-+----------------------------------------------------+---------------------+------------------------+
-; segout[0]$latch                                    ; segout[6]~1         ; yes                    ;
-; segout[1]$latch                                    ; segout[6]~1         ; yes                    ;
-; segout[2]$latch                                    ; segout[6]~1         ; yes                    ;
-; segout[3]$latch                                    ; segout[6]~1         ; yes                    ;
-; segout[4]$latch                                    ; segout[6]~1         ; yes                    ;
-; segout[5]$latch                                    ; segout[6]~1         ; yes                    ;
-; segout[6]$latch                                    ; segout[6]~1         ; yes                    ;
-; Number of user-specified and inferred latches = 7  ;                     ;                        ;
-+----------------------------------------------------+---------------------+------------------------+
-Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
 +------------------------------------------------------+
@@ -220,45 +201,41 @@ Note: All latches listed above may not be present at the end of synthesis due to
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Full Version
-    Info: Processing started: Tue Nov 15 20:26:05 2016
+    Info: Processing started: Sat Nov 26 04:03:21 2016
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off exercise -c exercise
 Info: Found 2 design units, including 1 entities, in source file BCD2SEG.vhd
     Info: Found design unit 1: BCD2SEG-behav
     Info: Found entity 1: BCD2SEG
 Info: Elaborating entity "BCD2SEG" for the top level hierarchy
-Warning (10631): VHDL Process Statement warning at BCD2SEG.vhd(17): inferring latch(es) for signal or variable "segout", which holds its previous value in one or more paths through the process
-Info (10041): Inferred latch for "segout[0]" at BCD2SEG.vhd(17)
-Info (10041): Inferred latch for "segout[1]" at BCD2SEG.vhd(17)
-Info (10041): Inferred latch for "segout[2]" at BCD2SEG.vhd(17)
-Info (10041): Inferred latch for "segout[3]" at BCD2SEG.vhd(17)
-Info (10041): Inferred latch for "segout[4]" at BCD2SEG.vhd(17)
-Info (10041): Inferred latch for "segout[5]" at BCD2SEG.vhd(17)
-Info (10041): Inferred latch for "segout[6]" at BCD2SEG.vhd(17)
-Warning: Latch segout[0]$latch has unsafe behavior
-    Warning: Ports D and ENA on the latch are fed by the same signal bcdin[1]
-Warning: Latch segout[1]$latch has unsafe behavior
-    Warning: Ports D and ENA on the latch are fed by the same signal bcdin[1]
-Warning: Latch segout[2]$latch has unsafe behavior
-    Warning: Ports D and ENA on the latch are fed by the same signal bcdin[1]
-Warning: Latch segout[3]$latch has unsafe behavior
-    Warning: Ports D and ENA on the latch are fed by the same signal bcdin[1]
-Warning: Latch segout[4]$latch has unsafe behavior
-    Warning: Ports D and ENA on the latch are fed by the same signal bcdin[1]
-Warning: Latch segout[5]$latch has unsafe behavior
-    Warning: Ports D and ENA on the latch are fed by the same signal bcdin[2]
-Warning: Latch segout[6]$latch has unsafe behavior
-    Warning: Ports D and ENA on the latch are fed by the same signal bcdin[1]
+Warning (10542): VHDL Variable Declaration warning at BCD2SEG.vhd(21): used initial value expression for variable "s1" because variable was never assigned a value
+Warning: Output pins are stuck at VCC or GND
+    Warning (13410): Pin "y1[0]" is stuck at GND
+    Warning (13410): Pin "y1[1]" is stuck at VCC
+    Warning (13410): Pin "y1[2]" is stuck at VCC
+    Warning (13410): Pin "y1[3]" is stuck at GND
+    Warning (13410): Pin "y2[0]" is stuck at GND
+    Warning (13410): Pin "y2[1]" is stuck at GND
+    Warning (13410): Pin "y2[2]" is stuck at VCC
+    Warning (13410): Pin "y2[3]" is stuck at GND
 Warning: Ignored assignments for entity "exercise" -- entity does not exist in design
     Warning: Assignment of entity set_global_assignment -name LL_ROOT_REGION ON -entity exercise -section_id "Root Region" is ignored
     Warning: Assignment of entity set_global_assignment -name LL_MEMBER_STATE LOCKED -entity exercise -section_id "Root Region" is ignored
-Info: Implemented 27 device resources after synthesis - the final resource count might be different
-    Info: Implemented 5 input pins
-    Info: Implemented 7 output pins
-    Info: Implemented 15 logic cells
-Info: Quartus II Analysis & Synthesis was successful. 0 errors, 18 warnings
-    Info: Peak virtual memory: 224 megabytes
-    Info: Processing ended: Tue Nov 15 20:26:06 2016
-    Info: Elapsed time: 00:00:01
+Warning: Design contains 8 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "s[0]"
+    Warning (15610): No output dependent on input pin "s[1]"
+    Warning (15610): No output dependent on input pin "s[2]"
+    Warning (15610): No output dependent on input pin "s[3]"
+    Warning (15610): No output dependent on input pin "s[4]"
+    Warning (15610): No output dependent on input pin "s[5]"
+    Warning (15610): No output dependent on input pin "s[6]"
+    Warning (15610): No output dependent on input pin "s[7]"
+Info: Implemented 16 device resources after synthesis - the final resource count might be different
+    Info: Implemented 8 input pins
+    Info: Implemented 8 output pins
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 22 warnings
+    Info: Peak virtual memory: 208 megabytes
+    Info: Processing ended: Sat Nov 26 04:03:23 2016
+    Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:01
 
 

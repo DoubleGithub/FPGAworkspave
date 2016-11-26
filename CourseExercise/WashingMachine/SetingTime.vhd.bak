@@ -4,20 +4,38 @@ use ieee.std_logic_1164.all;
 use ieee.std_logic_unsigned.all;
 use ieee.std_logic_arith.all;
 
-entity SetingTime is
-	port(
+entity SetingTime is 
+	port( 
 		load : in std_logic ;
 		time_input: in std_logic_vector(3 downto 0);
-		time_set: out std_logic_vector(3 downto 0)
+		time_set: out std_logic_vector(7 downto 0)
 	);
 end SetingTime ;
 
-architecture beha of SetingTime is 
+architecture behav of SetingTime is 
 begin
 process(load)
+	variable tmp : std_logic_vector (7 downto 0) ;
 begin
-	if load'event and load = 1 then
-		time_set <= time_input ;
+	if load'event and load = '1' then
+		--time_set <= time_input ;
+		case time_input is 
+			when "0000" => tmp := "00000000" ;
+			when "0001" => tmp := "00000000" ;
+			when "0010" => tmp := "00000000" ;
+			when "0011" => tmp := "00000000" ;
+			when "0100" => tmp := "00000000" ;
+			when "0101" => tmp := "00000000" ;
+			when "0110" => tmp := "00000000" ;
+			when "0111" => tmp := "00000000" ;
+			when "1000" => tmp := "00000000" ;
+			when "1001" => tmp := "00000000" ;
+			when "1010" => tmp := "00000000" ;
+			when "1011" => tmp := "00000000" ;
+			when "1100" => tmp := "00000000" ;
+			when "1101" => tmp := "00000000" ;
+			when "1110" => tmp := "00000000" ;
+			when "1111" => tmp := "00000000" ;
 	end if ;
 	end process ;
-end beha;
+end behav;

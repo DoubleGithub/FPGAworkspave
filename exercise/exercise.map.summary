@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Tue Nov 15 20:26:06 2016
+Analysis & Synthesis Status : Successful - Sat Nov 26 04:03:23 2016
 Quartus II Version : 9.0 Build 235 06/17/2009 SP 2 SJ Full Version
 Revision Name : exercise
 Top-level Entity Name : BCD2SEG
 Family : Cyclone III
-Total logic elements : 15
-    Total combinational functions : 15
+Total logic elements : 0
+    Total combinational functions : 0
     Dedicated logic registers : 0
 Total registers : 0
-Total pins : 12
+Total pins : 16
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0

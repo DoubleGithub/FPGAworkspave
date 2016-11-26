@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Thu Nov 24 01:05:23 2016
+Analysis & Synthesis Status : Successful - Sat Nov 26 05:44:27 2016
 Quartus II Version : 9.0 Build 235 06/17/2009 SP 2 SJ Full Version
 Revision Name : WashingMachine
-Top-level Entity Name : SetingTime
+Top-level Entity Name : Counter
 Family : Cyclone III
-Total logic elements : 4
-    Total combinational functions : 0
-    Dedicated logic registers : 4
-Total registers : 4
-Total pins : 9
+Total logic elements : 433
+    Total combinational functions : 433
+    Dedicated logic registers : 43
+Total registers : 43
+Total pins : 22
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0

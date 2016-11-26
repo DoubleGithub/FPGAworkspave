@@ -1,5 +1,5 @@
 Simulator report for exercise
-Tue Nov 15 20:31:24 2016
+Sat Nov 26 04:04:02 2016
 Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Full Version
 
 
@@ -45,9 +45,9 @@ applicable agreement for further details.
 +-----------------------------+--------------+
 ; Simulation Start Time       ; 0 ps         ;
 ; Simulation End Time         ; 20.0 us      ;
-; Simulation Netlist Size     ; 40 nodes     ;
-; Simulation Coverage         ;      87.88 % ;
-; Total Number of Transitions ; 476          ;
+; Simulation Netlist Size     ; 32 nodes     ;
+; Simulation Coverage         ;       0.00 % ;
+; Total Number of Transitions ; 0            ;
 ; Simulation Breakpoints      ; 0            ;
 ; Family                      ; Cyclone III  ;
 ; Device                      ; EP3C25F324C8 ;
@@ -97,73 +97,88 @@ Please use Quartus II to view the waveform report data.
 +-----------------------------------------------------+--------------+
 ; Type                                                ; Value        ;
 +-----------------------------------------------------+--------------+
-; Total coverage as a percentage                      ;      87.88 % ;
-; Total nodes checked                                 ; 40           ;
-; Total output ports checked                          ; 33           ;
-; Total output ports with complete 1/0-value coverage ; 29           ;
-; Total output ports with no 1/0-value coverage       ; 0            ;
-; Total output ports with no 1-value coverage         ; 0            ;
-; Total output ports with no 0-value coverage         ; 4            ;
+; Total coverage as a percentage                      ;       0.00 % ;
+; Total nodes checked                                 ; 32           ;
+; Total output ports checked                          ; 24           ;
+; Total output ports with complete 1/0-value coverage ; 0            ;
+; Total output ports with no 1/0-value coverage       ; 24           ;
+; Total output ports with no 1-value coverage         ; 24           ;
+; Total output ports with no 0-value coverage         ; 24           ;
 +-----------------------------------------------------+--------------+
 
 
 The following table displays output ports that toggle between 1 and 0 during simulation.
-+--------------------------------------------------------------------------+
-; Complete 1/0-Value Coverage                                              ;
-+---------------------------+---------------------------+------------------+
-; Node Name                 ; Output Port Name          ; Output Port Type ;
-+---------------------------+---------------------------+------------------+
-; |BCD2SEG|Mux0~6           ; |BCD2SEG|Mux0~6           ; combout          ;
-; |BCD2SEG|Mux1~6           ; |BCD2SEG|Mux1~6           ; combout          ;
-; |BCD2SEG|Mux2~6           ; |BCD2SEG|Mux2~6           ; combout          ;
-; |BCD2SEG|Mux3~6           ; |BCD2SEG|Mux3~6           ; combout          ;
-; |BCD2SEG|Mux4~6           ; |BCD2SEG|Mux4~6           ; combout          ;
-; |BCD2SEG|Mux5~6           ; |BCD2SEG|Mux5~6           ; combout          ;
-; |BCD2SEG|Mux6~5           ; |BCD2SEG|Mux6~5           ; combout          ;
-; |BCD2SEG|segout[0]~output ; |BCD2SEG|segout[0]~output ; o                ;
-; |BCD2SEG|segout[0]        ; |BCD2SEG|segout[0]        ; padout           ;
-; |BCD2SEG|segout[1]~output ; |BCD2SEG|segout[1]~output ; o                ;
-; |BCD2SEG|segout[1]        ; |BCD2SEG|segout[1]        ; padout           ;
-; |BCD2SEG|segout[2]~output ; |BCD2SEG|segout[2]~output ; o                ;
-; |BCD2SEG|segout[2]        ; |BCD2SEG|segout[2]        ; padout           ;
-; |BCD2SEG|segout[3]~output ; |BCD2SEG|segout[3]~output ; o                ;
-; |BCD2SEG|segout[3]        ; |BCD2SEG|segout[3]        ; padout           ;
-; |BCD2SEG|segout[4]~output ; |BCD2SEG|segout[4]~output ; o                ;
-; |BCD2SEG|segout[4]        ; |BCD2SEG|segout[4]        ; padout           ;
-; |BCD2SEG|segout[5]~output ; |BCD2SEG|segout[5]~output ; o                ;
-; |BCD2SEG|segout[5]        ; |BCD2SEG|segout[5]        ; padout           ;
-; |BCD2SEG|segout[6]~output ; |BCD2SEG|segout[6]~output ; o                ;
-; |BCD2SEG|segout[6]        ; |BCD2SEG|segout[6]        ; padout           ;
-; |BCD2SEG|bcdin[0]~input   ; |BCD2SEG|bcdin[0]~input   ; o                ;
-; |BCD2SEG|bcdin[0]         ; |BCD2SEG|bcdin[0]         ; padout           ;
-; |BCD2SEG|bcdin[1]~input   ; |BCD2SEG|bcdin[1]~input   ; o                ;
-; |BCD2SEG|bcdin[1]         ; |BCD2SEG|bcdin[1]         ; padout           ;
-; |BCD2SEG|bcdin[2]~input   ; |BCD2SEG|bcdin[2]~input   ; o                ;
-; |BCD2SEG|bcdin[2]         ; |BCD2SEG|bcdin[2]         ; padout           ;
-; |BCD2SEG|bcdin[3]~input   ; |BCD2SEG|bcdin[3]~input   ; o                ;
-; |BCD2SEG|bcdin[3]         ; |BCD2SEG|bcdin[3]         ; padout           ;
-+---------------------------+---------------------------+------------------+
-
-
-The following table displays output ports that do not toggle to 1 during simulation.
 +-------------------------------------------------+
-; Missing 1-Value Coverage                        ;
+; Complete 1/0-Value Coverage                     ;
 +-----------+------------------+------------------+
 ; Node Name ; Output Port Name ; Output Port Type ;
 +-----------+------------------+------------------+
 
 
+The following table displays output ports that do not toggle to 1 during simulation.
++------------------------------------------------------------------+
+; Missing 1-Value Coverage                                         ;
++-----------------------+-----------------------+------------------+
+; Node Name             ; Output Port Name      ; Output Port Type ;
++-----------------------+-----------------------+------------------+
+; |BCD2SEG|s[0]         ; |BCD2SEG|s[0]         ; padout           ;
+; |BCD2SEG|s[1]         ; |BCD2SEG|s[1]         ; padout           ;
+; |BCD2SEG|s[2]         ; |BCD2SEG|s[2]         ; padout           ;
+; |BCD2SEG|s[3]         ; |BCD2SEG|s[3]         ; padout           ;
+; |BCD2SEG|s[4]         ; |BCD2SEG|s[4]         ; padout           ;
+; |BCD2SEG|s[5]         ; |BCD2SEG|s[5]         ; padout           ;
+; |BCD2SEG|s[6]         ; |BCD2SEG|s[6]         ; padout           ;
+; |BCD2SEG|s[7]         ; |BCD2SEG|s[7]         ; padout           ;
+; |BCD2SEG|y1[0]~output ; |BCD2SEG|y1[0]~output ; o                ;
+; |BCD2SEG|y1[0]        ; |BCD2SEG|y1[0]        ; padout           ;
+; |BCD2SEG|y1[1]~output ; |BCD2SEG|y1[1]~output ; o                ;
+; |BCD2SEG|y1[1]        ; |BCD2SEG|y1[1]        ; padout           ;
+; |BCD2SEG|y1[2]~output ; |BCD2SEG|y1[2]~output ; o                ;
+; |BCD2SEG|y1[2]        ; |BCD2SEG|y1[2]        ; padout           ;
+; |BCD2SEG|y1[3]~output ; |BCD2SEG|y1[3]~output ; o                ;
+; |BCD2SEG|y1[3]        ; |BCD2SEG|y1[3]        ; padout           ;
+; |BCD2SEG|y2[0]~output ; |BCD2SEG|y2[0]~output ; o                ;
+; |BCD2SEG|y2[0]        ; |BCD2SEG|y2[0]        ; padout           ;
+; |BCD2SEG|y2[1]~output ; |BCD2SEG|y2[1]~output ; o                ;
+; |BCD2SEG|y2[1]        ; |BCD2SEG|y2[1]        ; padout           ;
+; |BCD2SEG|y2[2]~output ; |BCD2SEG|y2[2]~output ; o                ;
+; |BCD2SEG|y2[2]        ; |BCD2SEG|y2[2]        ; padout           ;
+; |BCD2SEG|y2[3]~output ; |BCD2SEG|y2[3]~output ; o                ;
+; |BCD2SEG|y2[3]        ; |BCD2SEG|y2[3]        ; padout           ;
++-----------------------+-----------------------+------------------+
+
+
 The following table displays output ports that do not toggle to 0 during simulation.
-+------------------------------------------------------------------------------+
-; Missing 0-Value Coverage                                                     ;
-+-----------------------------+-----------------------------+------------------+
-; Node Name                   ; Output Port Name            ; Output Port Type ;
-+-----------------------------+-----------------------------+------------------+
-; |BCD2SEG|segout[6]~2        ; |BCD2SEG|segout[6]~2        ; combout          ;
-; |BCD2SEG|en~input           ; |BCD2SEG|en~input           ; o                ;
-; |BCD2SEG|en                 ; |BCD2SEG|en                 ; padout           ;
-; |BCD2SEG|segout[6]~2clkctrl ; |BCD2SEG|segout[6]~2clkctrl ; outclk           ;
-+-----------------------------+-----------------------------+------------------+
++------------------------------------------------------------------+
+; Missing 0-Value Coverage                                         ;
++-----------------------+-----------------------+------------------+
+; Node Name             ; Output Port Name      ; Output Port Type ;
++-----------------------+-----------------------+------------------+
+; |BCD2SEG|s[0]         ; |BCD2SEG|s[0]         ; padout           ;
+; |BCD2SEG|s[1]         ; |BCD2SEG|s[1]         ; padout           ;
+; |BCD2SEG|s[2]         ; |BCD2SEG|s[2]         ; padout           ;
+; |BCD2SEG|s[3]         ; |BCD2SEG|s[3]         ; padout           ;
+; |BCD2SEG|s[4]         ; |BCD2SEG|s[4]         ; padout           ;
+; |BCD2SEG|s[5]         ; |BCD2SEG|s[5]         ; padout           ;
+; |BCD2SEG|s[6]         ; |BCD2SEG|s[6]         ; padout           ;
+; |BCD2SEG|s[7]         ; |BCD2SEG|s[7]         ; padout           ;
+; |BCD2SEG|y1[0]~output ; |BCD2SEG|y1[0]~output ; o                ;
+; |BCD2SEG|y1[0]        ; |BCD2SEG|y1[0]        ; padout           ;
+; |BCD2SEG|y1[1]~output ; |BCD2SEG|y1[1]~output ; o                ;
+; |BCD2SEG|y1[1]        ; |BCD2SEG|y1[1]        ; padout           ;
+; |BCD2SEG|y1[2]~output ; |BCD2SEG|y1[2]~output ; o                ;
+; |BCD2SEG|y1[2]        ; |BCD2SEG|y1[2]        ; padout           ;
+; |BCD2SEG|y1[3]~output ; |BCD2SEG|y1[3]~output ; o                ;
+; |BCD2SEG|y1[3]        ; |BCD2SEG|y1[3]        ; padout           ;
+; |BCD2SEG|y2[0]~output ; |BCD2SEG|y2[0]~output ; o                ;
+; |BCD2SEG|y2[0]        ; |BCD2SEG|y2[0]        ; padout           ;
+; |BCD2SEG|y2[1]~output ; |BCD2SEG|y2[1]~output ; o                ;
+; |BCD2SEG|y2[1]        ; |BCD2SEG|y2[1]        ; padout           ;
+; |BCD2SEG|y2[2]~output ; |BCD2SEG|y2[2]~output ; o                ;
+; |BCD2SEG|y2[2]        ; |BCD2SEG|y2[2]        ; padout           ;
+; |BCD2SEG|y2[3]~output ; |BCD2SEG|y2[3]~output ; o                ;
+; |BCD2SEG|y2[3]        ; |BCD2SEG|y2[3]        ; padout           ;
++-----------------------+-----------------------+------------------+
 
 
 +---------------------+
@@ -179,18 +194,19 @@ The following table displays output ports that do not toggle to 0 during simulat
 Info: *******************************************************************
 Info: Running Quartus II Simulator
     Info: Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Full Version
-    Info: Processing started: Tue Nov 15 20:31:23 2016
+    Info: Processing started: Sat Nov 26 04:04:02 2016
 Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off exercise -c exercise
-Info: Using vector source file "D:/WorkSpace/FPGAworkspave/exercise/BCD2SEG.vwf"
+Info: Using vector source file "E:/Workspace/FPGAworkspave/exercise/BCD2SEG.vwf"
+Warning: Ignored node in vector source file. Can't find corresponding node name "clk" in design.
 Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
     Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
 Info: Simulation partitioned into 1 sub-simulations
-Info: Simulation coverage is      87.88 %
-Info: Number of transitions in simulation is 476
-Info: Quartus II Simulator was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 161 megabytes
-    Info: Processing ended: Tue Nov 15 20:31:24 2016
+Info: Simulation coverage is       0.00 %
+Info: Number of transitions in simulation is 0
+Info: Quartus II Simulator was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 143 megabytes
+    Info: Processing ended: Sat Nov 26 04:04:03 2016
     Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:00
+    Info: Total CPU time (on all processors): 00:00:01
 
 
