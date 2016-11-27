@@ -1,0 +1,16 @@
+Fitter Status : Successful - Sun Nov 27 20:18:53 2016
+Quartus II Version : 9.0 Build 235 06/17/2009 SP 2 SJ Full Version
+Revision Name : xiyiji
+Top-level Entity Name : top
+Family : Cyclone III
+Device : EP3C25F324C8
+Timing Models : Final
+Total logic elements : 511 / 24,624 ( 2 % )
+    Total combinational functions : 500 / 24,624 ( 2 % )
+    Dedicated logic registers : 76 / 24,624 ( < 1 % )
+Total registers : 76
+Total pins : 32 / 216 ( 15 % )
+Total virtual pins : 0
+Total memory bits : 0 / 608,256 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 132 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )

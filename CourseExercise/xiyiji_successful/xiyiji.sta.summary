@@ -1,0 +1,173 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'clk_1hz'
+Slack : -16.707
+TNS   : -343.952
+
+Type  : Slow 1200mV 85C Model Setup 'data_bus:inst2|CQI[1]'
+Slack : -4.867
+TNS   : -14.205
+
+Type  : Slow 1200mV 85C Model Setup 'data_bus:inst2|SW[1]'
+Slack : -3.076
+TNS   : -11.090
+
+Type  : Slow 1200mV 85C Model Setup 'data_bus:inst2|SW[8]'
+Slack : -1.894
+TNS   : -7.573
+
+Type  : Slow 1200mV 85C Model Setup 'clk_5khz'
+Slack : -1.614
+TNS   : -12.993
+
+Type  : Slow 1200mV 85C Model Setup 'clk_1Mhz'
+Slack : -1.499
+TNS   : -2.702
+
+Type  : Slow 1200mV 85C Model Hold 'clk_1hz'
+Slack : -2.251
+TNS   : -29.432
+
+Type  : Slow 1200mV 85C Model Hold 'clk_1Mhz'
+Slack : -0.608
+TNS   : -1.411
+
+Type  : Slow 1200mV 85C Model Hold 'data_bus:inst2|CQI[1]'
+Slack : -0.366
+TNS   : -0.366
+
+Type  : Slow 1200mV 85C Model Hold 'data_bus:inst2|SW[1]'
+Slack : 0.324
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'clk_5khz'
+Slack : 0.454
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'data_bus:inst2|SW[8]'
+Slack : 2.275
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'clk_1hz'
+Slack : 1.120
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'clk_1hz'
+Slack : -1.043
+TNS   : -47.933
+
+Type  : Slow 1200mV 0C Model Setup 'clk_1hz'
+Slack : -15.337
+TNS   : -319.728
+
+Type  : Slow 1200mV 0C Model Setup 'data_bus:inst2|CQI[1]'
+Slack : -4.472
+TNS   : -13.019
+
+Type  : Slow 1200mV 0C Model Setup 'data_bus:inst2|SW[1]'
+Slack : -2.773
+TNS   : -9.864
+
+Type  : Slow 1200mV 0C Model Setup 'data_bus:inst2|SW[8]'
+Slack : -1.691
+TNS   : -6.760
+
+Type  : Slow 1200mV 0C Model Setup 'clk_5khz'
+Slack : -1.571
+TNS   : -12.539
+
+Type  : Slow 1200mV 0C Model Setup 'clk_1Mhz'
+Slack : -1.233
+TNS   : -2.188
+
+Type  : Slow 1200mV 0C Model Hold 'clk_1hz'
+Slack : -2.108
+TNS   : -31.669
+
+Type  : Slow 1200mV 0C Model Hold 'clk_1Mhz'
+Slack : -0.548
+TNS   : -1.710
+
+Type  : Slow 1200mV 0C Model Hold 'data_bus:inst2|CQI[1]'
+Slack : -0.357
+TNS   : -0.357
+
+Type  : Slow 1200mV 0C Model Hold 'data_bus:inst2|SW[1]'
+Slack : 0.206
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'clk_5khz'
+Slack : 0.402
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'data_bus:inst2|SW[8]'
+Slack : 2.132
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'clk_1hz'
+Slack : 1.244
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'clk_1hz'
+Slack : -0.993
+TNS   : -45.624
+
+Type  : Fast 1200mV 0C Model Setup 'clk_1hz'
+Slack : -6.504
+TNS   : -143.054
+
+Type  : Fast 1200mV 0C Model Setup 'data_bus:inst2|CQI[1]'
+Slack : -1.624
+TNS   : -4.671
+
+Type  : Fast 1200mV 0C Model Setup 'data_bus:inst2|SW[1]'
+Slack : -1.588
+TNS   : -5.884
+
+Type  : Fast 1200mV 0C Model Setup 'data_bus:inst2|SW[8]'
+Slack : -1.023
+TNS   : -4.087
+
+Type  : Fast 1200mV 0C Model Setup 'clk_1Mhz'
+Slack : -0.146
+TNS   : -0.146
+
+Type  : Fast 1200mV 0C Model Setup 'clk_5khz'
+Slack : 0.084
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'clk_1hz'
+Slack : -1.059
+TNS   : -17.267
+
+Type  : Fast 1200mV 0C Model Hold 'clk_1Mhz'
+Slack : -0.467
+TNS   : -3.829
+
+Type  : Fast 1200mV 0C Model Hold 'data_bus:inst2|CQI[1]'
+Slack : -0.136
+TNS   : -0.136
+
+Type  : Fast 1200mV 0C Model Hold 'data_bus:inst2|SW[1]'
+Slack : 0.177
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'clk_5khz'
+Slack : 0.183
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'data_bus:inst2|SW[8]'
+Slack : 1.738
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'clk_1hz'
+Slack : 0.639
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'clk_1hz'
+Slack : -0.499
+TNS   : -22.931
+
+------------------------------------------------------------
