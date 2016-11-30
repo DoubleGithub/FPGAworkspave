@@ -4,9 +4,9 @@ use ieee.std_logic_1164.all;
 use ieee.std_logic_unsigned.all;
 use ieee.std_logic_arith.all;
 
-entity Counter is
+entity Counter is 
 	port(
-		clk: in std_logic ;
+		clk: in std_logic ; 
 		en: in std_logic ;
 		start: in std_logic ;
 		time_over: out std_logic ;
